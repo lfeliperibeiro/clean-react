@@ -62,27 +62,11 @@ button {
       text-transform: uppercase;
     }
 
-    .inputWrap {
-      margin-top: 16px;
-      display: flex;
-      position: relative;
-      align-items: center;
-    }
-
-    input {
-      flex-grow: 1;
-    }
-
-    span.status {    
-      position: absolute;
-      right: 8px;
-      cursor: help;
-    }
+    
 
     .submit{
       margin-top: 16px;
     }
-
     .link {
       text-align: center;
       color:$primary;
@@ -107,7 +91,6 @@ button {
         color: $primaryLight;
       }
     }
-
   }
 
   
