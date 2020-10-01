@@ -88,11 +88,7 @@ button {
       flex-grow: 1;
     }
 
-    span.status {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: linear-gradient(to right, #cb356b, #bd3f32);
+    span.status {    
       position: absolute;
       right: 8px;
       cursor: help;
