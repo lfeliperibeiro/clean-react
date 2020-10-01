@@ -5,7 +5,7 @@ module.exports = {
   ],
   coverageDirectory: 'coverage',
 
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   transform: {
     '.+\\.(ts|tsx)$': 'ts-jest'
   },
