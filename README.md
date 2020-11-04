@@ -1,12 +1,14 @@
 [![Build Status](https://travis-ci.org/lfeliperibeiro/clean-react.svg?branch=master)](https://travis-ci.org/lfeliperibeiro/clean-react)
+[![Coverage Status](https://coveralls.io/repos/github/lfeliperibeiro/clean-react/badge.svg?branch=master)](https://coveralls.io/github/lfeliperibeiro/clean-react?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
 # **4Dev React - Enquetes para Programadores**
+<img src="./public/img/course-logo.png" alt="clean-react">
 ---
 
-Essa sistema faz parte do treinamento do professor Rodrigo Manguinho (Mango) na Udemy.
+Esse sistema faz parte do treinamento do professor Rodrigo Manguinho (Mango) na Udemy.
 
 O objetivo do treinamento é mostrar como criar um sistema em ReactJs utilizando os novos Hooks, Recoil, com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID, DRY, YAGNI, KISS e aplicando Design Patterns para resolver alguns problemas comuns.
 
