@@ -2,6 +2,9 @@
   "name": "clean-react",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": "git@github.com:lfeliperibeiro/clean-react.git",
   "author": "Felipe Ribeiro <piporibeiro@gmail.com>",
   "license": "MIT",
