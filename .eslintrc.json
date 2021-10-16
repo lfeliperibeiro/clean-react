@@ -6,7 +6,7 @@
   },
   "extends": [
     "standard-with-typescript",
-    "pluglin:react/recommended"
+    "plugin:react/recommended"
   ],
    "plugins": ["react"],
   "parserOptions": {
