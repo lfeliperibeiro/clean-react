@@ -17,7 +17,7 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\/.ts(x?)$/,
+      test: /\.ts$|tsx/,
       loader: 'ts-loader',
       exclude: /node_modules/
     }, {
@@ -35,9 +35,13 @@ module.exports = {
     }]
   },
   devServer: {
-    contentBase: './public',
-    writeToDisk: true,
-    historyApiFallback: true
+    devMiddleware: {
+      index: true,
+      mimeTypes: { 'text/html': ['phtml'] },
+      publicPath: '/publicPathForDevServe',
+      serverSideRender: true,
+      writeToDisk: true
+    }
   },
   externals: {
     react: 'React',
