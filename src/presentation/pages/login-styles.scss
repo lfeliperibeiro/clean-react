@@ -25,6 +25,19 @@
       margin-bottom: 4px;
     }
 
+    .submit {
+      margin-top: 32px;
+
+      &:disabled {
+        background-color: $disabled;
+        color: $disabledText;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
 
     .link {
       text-align: center;
