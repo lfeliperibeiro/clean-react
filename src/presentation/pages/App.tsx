@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Login from '@/presentation/pages/login'
+import Login from '@/presentation/pages/Login/login'
 import '../styles/global.scss'
 
 const App: React.FC = () => {
