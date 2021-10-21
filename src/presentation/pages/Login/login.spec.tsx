@@ -4,6 +4,7 @@ import { cleanup, fireEvent, render, RenderResult, waitFor } from '@testing-libr
 import Login from '@/presentation/pages/Login/login'
 import { AuthenticationSpy, ValidationStub } from '@/presentation/test'
 import { InvalidCredentialsError } from '@/domain/errors'
+import 'jest-localstorage-mock'
 
 type SutTypes = {
   sut: RenderResult
@@ -50,6 +51,9 @@ const simulateValidSubmit = (sut: RenderResult, email = faker.internet.email(), 
 
 describe('LoginPage', () => {
   afterEach(cleanup)
+  beforeEach(() => {
+    localStorage.clear()
+  })
   it('should start with initial state', () => {
     const validationError = faker.random.words()
     const { sut } = makeSut({ validationError })
@@ -138,5 +142,12 @@ describe('LoginPage', () => {
     const mainError = sut.getByTestId('main-error')
     expect(mainError.textContent).toBe(error.message)
     expect(errorWrapper.childElementCount).toBe(1)
+  })
+
+  it('should add  accessToken to localStorage token', async () => {
+    const { sut, authenticationSpy } = makeSut()
+    simulateValidSubmit(sut)
+    await waitFor(() => sut.getByTestId('form'))
+    expect(localStorage.setItem).toHaveBeenCalledWith('accessToken', authenticationSpy.account.accessToken)
   })
 })
