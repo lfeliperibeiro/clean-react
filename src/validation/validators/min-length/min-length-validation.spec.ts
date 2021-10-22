@@ -1,5 +1,5 @@
 import { InvalidFieldError } from '@/validation/errors'
-import { MinLengthValidation } from '@/validation/validators/min-length-validation'
+import { MinLengthValidation } from '@/validation/validators/min-length/min-length-validation'
 
 import faker from 'faker'
 
