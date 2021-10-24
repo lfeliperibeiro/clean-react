@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from '@/presentation/pages/App'
+import { App } from '@/presentation/pages'
 import { makeLogin } from '@/main/factories/pages/login/login-factory'
 
 ReactDOM.render(

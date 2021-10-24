@@ -2,6 +2,8 @@ module.exports = {
   roots: ['<rootDir>/src'],
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx}',
+    '!<rootDir>/src/main/**/*',
+    '!<rootDir>/src/presentain/pages/App.tsx',
     '!**/*.d.ts'
   ],
   coverageDirectory: 'coverage',
