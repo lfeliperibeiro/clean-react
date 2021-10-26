@@ -8,7 +8,8 @@
     "test:watch": "yarn test -- --watch",
     "test:staged": "yarn test -- --findRelatedTests",
     "test:ci": "yarn test -- --coverage",
-    "check": "npx yarn-check -u -s"
+    "check": "npx yarn-check -u -s",
+    "lint": "eslint 'src/**'"
   },
   "repository": "git@github.com:lfeliperibeiro/clean-react.git",
   "author": "Felipe Ribeiro <piporibeiro@gmail.com>",
