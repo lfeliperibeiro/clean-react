@@ -18,7 +18,7 @@ jobs:
     - name: Run lint
       run: yarn run lint
     - name: Run tests
-      run: yarn run test:ci;
+      run: yarn run test:coveralls;
         
           
           
